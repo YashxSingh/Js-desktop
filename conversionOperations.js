@@ -39,5 +39,9 @@ let str1 = "Yash"
 let str2 = "How are you?"
 
 let str3 = str1 + str2
-console.log(str3)
-console.log(str1, str2)
+// console.log(str3)
+// console.log(str1, str2)
+
+let counter = 8;
+let incCounter = ++counter;
+// console.log(incCounter);
