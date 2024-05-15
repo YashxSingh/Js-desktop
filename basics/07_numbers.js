@@ -16,7 +16,7 @@ const runs3 = new Number(784389719231231159265n)
 // *********************** Maths ********************************
 
 // console.log(Math);
-// console.log(Math.round(5.689));
+console.log(Math.round(5.689));
 // console.log(Math.round(5.689));
 // console.log(Math.max(4, 9, 45 ,46 , 87 ,126 ,915 ,123 ,57));
 
