@@ -1,4 +1,6 @@
-const myDate = new Date()
+const myDate = new Date(55)
+
+console.log(myDate.toLocaleString());
 // console.log(myDate);
 // console.log(myDate.toString());
 // console.log(myDate.toDateString());
@@ -18,8 +20,8 @@ let myTimestamp = Date.now()
 // console.log(myTimestamp);
 // console.log(Math.floor(Date.now()/1000));
 
-console.log(myDate.toLocaleString('default', {
-    // era: "long",
-    weekday: "short",
-    year:"numeric"
-}));
+// console.log(myDate.toLocaleString('default', {
+//     // era: "long",
+//     weekday: "short",
+//     year:"numeric"
+// }));

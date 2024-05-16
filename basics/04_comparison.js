@@ -1,6 +1,7 @@
 // console.log(2>1);
 // console.log(2<1);
-// console.log(2==1);
+// console.log(1 == '1'); //converts type then comapres. // true
+// console.log(1 ==='1'); //strict comparison. Checks without comparison. // false
 // console.log(2!=1);
 // console.log(2>=1);
 
