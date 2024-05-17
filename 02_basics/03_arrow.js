@@ -26,5 +26,7 @@ const addNumbers = (num1, num2) => num1 + num2;
 const squareNumber = (number) => number**2;
 // console.log(squareNumber(346748));
 
-const add2nos = (num1, num2) =>({user: "Yash"})
-console.log(add2nos(1, 2));
+const add2nos = (num1, num2) =>({user: "Yash", age:24})
+// console.log(add2nos(123331, 27897));
+
+console.log(this)
