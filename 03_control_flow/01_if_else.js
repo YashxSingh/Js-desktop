@@ -18,14 +18,32 @@
 // }
 
 
-const balance = 789;
-// if (balance>500) console.log("test1"), console.log("test2"); // bad practice.
+// const balance = 789;
+// // if (balance>500) console.log("test1"), console.log("test2"); // bad practice.
 
-if (balance<500) {
-    console.log("Poor");
-} else if(balance<1000 ){
-    console.log("Medium Class");
-}
-else{
-    console.log("Rich Guy");
-}
+// if (balance<500) {
+//     console.log("Poor");
+// } else if(balance<1000 ){
+//     console.log("Medium Class");
+// }
+// else{
+//     console.log("Rich Guy");
+// }
+
+// const isAdult = true;
+// const isRegistered = false;
+
+// if (isAdult && isRegistered) {
+//     console.log("Eligible to vote.");
+// } else {
+//     console.log("Not eligible to vote.");
+// }
+
+// const didWFH = false;
+// const didWFO = true;
+
+// if (didWFH || didWFO) {
+//     console.log("Present");
+// } else {
+//     console.log("Absent");
+// }
