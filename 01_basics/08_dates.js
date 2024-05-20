@@ -25,3 +25,6 @@ let myTimestamp = Date.now()
 //     weekday: "short",
 //     year:"numeric"
 // }));
+
+const ddt = new Date;
+console.log(ddt.toLocaleString());
