@@ -24,8 +24,8 @@ let subs2 = projectName.slice(1, 8);
 // Trim function
 // console.log(projectName.trim(), `${projectName}`);
 
-console.log(projectName.replace("Singh", "Baghel"));
+// console.log(projectName.replace("Singh", "Baghel"));
 
-console.log(Number(projectName.includes("Yash")));
+// console.log(Number(projectName.includes("Yash")));
 
-console.log(projectName.split("a", 2));
+// console.log(projectName.split("a", 2));
