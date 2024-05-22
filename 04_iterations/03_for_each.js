@@ -15,7 +15,7 @@ function printMe(item) {
 myArray.forEach(printMe)
 
 myArray.forEach((a, b, c) => {
-    // console.log(a, b, c);
+    console.log(a, b, c);
 })
 
 const myCoding = [
