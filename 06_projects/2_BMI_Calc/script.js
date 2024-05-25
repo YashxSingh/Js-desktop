@@ -1,4 +1,15 @@
 const form = document.querySelector("form");
+const day = document.querySelector("#day");
+
+day.addEventListener("click", (e) => {
+  if (document.querySelector("body").style.backgroundColor == "gray") {
+    document.querySelector("body").style.backgroundColor = "#f5efd6";
+    document.querySelector("form").style.color = "black";
+  } else {
+    document.querySelector("body").style.backgroundColor = "gray";
+    document.querySelector("form").style.color = "white";
+  }
+});
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
