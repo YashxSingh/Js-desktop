@@ -38,10 +38,10 @@ img {
   height: 50px;
   width: 50px;
   display: inline-flex;
-  margin: 10px;
+  margin: 5px;
   border-radius: 100px;
   text-align: center;
-  padding: 50px;
+  padding: 20px;
 }
 
 .buttons {

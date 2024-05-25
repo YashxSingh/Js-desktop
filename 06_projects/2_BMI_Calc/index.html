@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yash's BMI Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtaZYnHfZ--a74CIFzzm0zKxqGfXtdvFQXgZXEPZiP8g&s"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtaZYnHfZ--a74CIFzzm0zKxqGfXtdvFQXgZXEPZiP8g&s"
+          alt="BMI Logo"
+        />
+      </div>
+      <p class="head">BMI Calculator</p>
+    </div>
+    <div class="container">
+      <form>
+        <div>
+          <label for="height">Height in cm : </label>
+          <input type="text" id="height" />
+        </div>
+        <div>
+          <label for="weight">Weight in cm : </label>
+          <input type="text" id="weight" />
+        </div>
+        <button style="padding-left: 7px; padding-right: 7px">Calculate</button>   
+        <div id="result"></div>
+      </form>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
