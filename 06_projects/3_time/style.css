@@ -1,0 +1,28 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.clock {
+  margin: 30px;
+  display: block;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 3px;
+}
