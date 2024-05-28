@@ -1,4 +1,3 @@
-const rand = Math.floor(Math.random() * 100) + 1;
 const submit = document.querySelector("#submit");
 const prev = document.querySelector(".prev");
 const chances = document.querySelector(".remaining");
@@ -7,6 +6,7 @@ const newGame = document.querySelector("#newGamebtn");
 const dispGuess = document.querySelector(".displayGuess");
 const lowOrHigh = document.querySelector(".loworhigh");
 
+let rand = Math.floor(Math.random() * 100) + 1;
 let guesses = new Array();
 let count = 10;
 let playGame = true;
@@ -20,6 +20,7 @@ newGame.addEventListener('click', (e) =>{
 
 if (playGame) {
   submit.addEventListener("click", (e) => {
+    console.log(rand);
     e.preventDefault();
     const guess = parseInt(userInput.value);
     validateGuess(guess);
@@ -84,6 +85,7 @@ function newGamefn() {
   submit.removeAttribute("disabled");
   userInput.removeAttribute("disabled");
   playGame = true;
+  rand = Math.floor(Math.random() * 100) + 1;
   userInput.value ="";
   prev.innerHTML = "";
   chances.innerHTML = "10";
