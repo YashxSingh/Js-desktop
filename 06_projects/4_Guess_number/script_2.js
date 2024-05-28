@@ -20,7 +20,6 @@ newGame.addEventListener('click', (e) =>{
 
 if (playGame) {
   submit.addEventListener("click", (e) => {
-    console.log(rand);
     e.preventDefault();
     const guess = parseInt(userInput.value);
     validateGuess(guess);
