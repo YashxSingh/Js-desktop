@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon"
+        href="https://cdn4.iconfinder.com/data/icons/new-google-logo-2015/400/new-google-favicon-1024.png"
+        type="image/x-icon" />
+    <title>Async</title>
+</head>
+
+<body>
+    <h1>Harsh aur code</h1>
+    <button id="stop">Stop</button>
+    <button id="start">Start</button>
+</body>
+<script>
+    // setTimeout(() => {
+    //     console.log("Yash");
+    // }, 20000);
+
+    const changeName = function () {
+        document.querySelector("h1").innerHTML = "Yash aur code";
+    };
+
+    const changeNameTimeout = setTimeout(changeName, 2000);
+
+    document.querySelector("#stop").addEventListener("click", () => {
+        clearTimeout(changeNameTimeout);
+        console.log("Stopped");
+    });
+
+    document.querySelector("#start").addEventListener('click', ()=>{
+        setTimeout(changeName, 2000);
+        console.log("Started");
+        })
+</script>
+
+</html>

@@ -1,0 +1,11 @@
+.insert {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 200px;
+    color: white;
+}
+.key {
+    background: black;
+    color: white;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="https://2ality.com/2011/10/logo-js/js.jpg" type="image/x-icon" />
+    <title>JS setInterval</title>
+</head>
+
+<body>
+    <h1>Yash aur code</h1>
+    <button id="start">Start</button>
+    <button id="stop">stop</button>
+    <br />
+    <span class="text"></span>
+</body>
+<script>
+    // setInterval(() => {
+    //     console.log((Date.now()));
+    // }, 2000);
+
+    let dateInterval;
+    const printDate = function () {
+        document.querySelector(".text").innerHTML = `${Date()}`;
+    };
+
+    document.querySelector("#start").addEventListener("click", function () {
+        dateInterval = setInterval(printDate, 999);
+    });
+
+    document.querySelector("#stop").addEventListener("click", () => {
+        clearInterval(dateInterval);
+        console.clear();
+        document.querySelector(".text").innerHTML = ``;
+    });
+    // const printDateIterval = setInterval(printDate, 2000);
+    // clearInterval(printDateIterval);
+</script>
+</html>
