@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://2ality.com/2011/10/logo-js/js.jpg" type="image/x-icon">
+    <title>Document</title>
+</head>
+<body style="background-color: white;">
+    0 	UNSENT 	Client has been created. open() not called yet. <br>
+    1 	OPENED 	open() has been called. <br>
+    2 	HEADERS_RECEIVED 	send() has been called, and headers and status are available. <br>
+    3 	LOADING 	Downloading; responseText holds partial data. <br>
+    4 	DONE 	The operation is complete. <br>
+    <br>
+    <span class="photo">
+        <img src="">
+    </span>
+</body>
+<script>
+    const requestURL = 'https://api.github.com/users/hiteshchoudhary'
+    // const requestURL = 'https://api.coindesk.com/v1/bpi/currentprice.json'
+    // const requestURL = 'https://api.nationalize.io?name=sahil'
+    const xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+        console.log(xhr.readyState);
+        // console.log(xhr);
+        if (xhr.readyState === 4) {
+            const data = JSON.parse(this.responseText);
+            console.log(data.avatar_url);
+            document.querySelector('img').setAttribute("src", `${data.avatar_url}`);
+        }
+    }
+    xhr.open('GET', requestURL);
+    xhr.send()
+</script>
+</html>
