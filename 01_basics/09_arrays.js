@@ -22,8 +22,9 @@ myHeroes.push("kartik");
 // myHeroes.unshift("kallu");
 // console.log(myHeroes);
 
-// myHeroes.shift();
-// console.log(myHeroes);
+console.log(myHeroes);
+myHeroes.shift();
+console.log(myHeroes);
 
 // console.log(myarr.includes(5));
 // console.log(myarr.includes(89));
@@ -67,12 +68,12 @@ const two_array = [7, 8, 9, [1, 2, 3, [77, 88, 99]], 456, 79798, 2124, [876, 87,
 // console.log(two_array);
 // console.table(two_array.flat(Infinity));
 
-console.log(Array.isArray("Yash"));
-console.log(Array.from("Yash"));
-console.log(Array.from({name: "Yash", city: "Chennai"}));
+// console.log(Array.isArray("Yash"));
+// console.log(Array.from("Yash"));
+// console.log(Array.from({name: "Yash", city: "Chennai"}));
 
-let score1 = 100;
-let score2 = 200;
-let score3 = 300;
+// let score1 = 100;
+// let score2 = 200;
+// let score3 = 300;
 
-console.log(Array.of(score1, score2, score3));
+// console.log(Array.of(score1, score2, score3));
